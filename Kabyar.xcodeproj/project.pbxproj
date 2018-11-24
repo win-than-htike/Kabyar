@@ -37,6 +37,7 @@
 /* Begin PBXFileReference section */
 		993BDA4021A5B64900AB7C8A /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		993BDA4521A5B72600AB7C8A /* ZawgyiOne.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ZawgyiOne.ttf; sourceTree = "<group>"; };
+		9956B5E721A9CBE6006741EA /* Kabyar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kabyar.entitlements; sourceTree = "<group>"; };
 		999550E921A89B3F00879805 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		99B7316921A862640066FDDB /* CreateKabyar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CreateKabyar.storyboard; sourceTree = "<group>"; };
 		99B7316C21A864570066FDDB /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 		99BDA51821A5B19200949F9E /* Kabyar */ = {
 			isa = PBXGroup;
 			children = (
+				9956B5E721A9CBE6006741EA /* Kabyar.entitlements */,
 				99B7316821A8623D0066FDDB /* storyboards */,
 				99F013B321A67A480057825B /* viewcontrollers */,
 				99F013AB21A672BE0057825B /* components */,
@@ -236,6 +238,17 @@
 				TargetAttributes = {
 					99BDA51521A5B19200949F9E = {
 						CreatedOnToolsVersion = 10.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.DataProtection = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};

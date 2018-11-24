@@ -108,13 +108,18 @@ class NetworkManager {
                 print(metadata ?? "NO METADATA")
                 print(error ?? "NO ERROR")
                 
-                self.storageRef.downloadURL(completion: { (url, error) in
+                uploadImageRef.downloadURL(completion: { (url, error) in
                     
                     if let error = error {
                         print(error)
                     }
                     
-                    success(url!.absoluteString)
+                    if let url = url {
+                     print(url.absoluteString)
+                     success(url.absoluteString)
+                    } else {
+                        failure()
+                    }
                     
                 })
                 
