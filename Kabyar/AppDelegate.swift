@@ -39,8 +39,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             }
         }
         
-        application.registerForRemoteNotifications()
-        
         return true
     }
     
@@ -59,6 +57,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, MessagingDelegate, UNUser
             }
             
         }
+        
+    }
+    
+    func messaging(_ messaging: Messaging, didReceive remoteMessage: MessagingRemoteMessage) {
+        
+//        remoteMessage.appData
         
     }
     
